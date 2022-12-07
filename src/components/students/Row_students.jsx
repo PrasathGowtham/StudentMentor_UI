@@ -38,7 +38,7 @@ function Row_students(props) {
           if (willDelete) {
             console.log(student._id);
             try {
-              await axios.delete(`http://localhost:4000/student/delete/${student._id}`)
+              await axios.delete(`https://student-f583.onrender.com/student/delete/${student._id}`)
               let index = userContext.students.findIndex((obj) => obj._id == student._id);
               userContext.students.splice(index, 1);
               userContext.setStudents([...userContext.students]);

@@ -12,7 +12,7 @@ function ViewStudent() {
    useEffect(() => {
       let fetch = async () => {
          try {
-            let student = await axios.get(`http://localhost:4000/student/view`)
+            let student = await axios.get(`https://student-f583.onrender.com/student/view`)
             setStud(student.data)
          } catch (error) {
             console.log(error);    

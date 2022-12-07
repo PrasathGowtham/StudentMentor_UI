@@ -33,7 +33,7 @@ function AddStudent() {
          },
          onSubmit: async (values) => {               
             try {
-               await axios.post("http://localhost:4000/student/add", values);
+               await axios.post("https://student-f583.onrender.com/student/add", values);
                userContext.setStudents([...userContext.students, values])
                formik.resetForm();
                navigate(()=>"/students");

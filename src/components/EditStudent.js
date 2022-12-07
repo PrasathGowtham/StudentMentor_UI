@@ -13,7 +13,7 @@ function EditStudent() {
    useEffect(() => {
          let fetch = async () => {
             try {
-                  let fetchStudent = await axios.get(`http://localhost:4000/student/viewone/${params.id}`);
+                  let fetchStudent = await axios.get(`https://student-f583.onrender.com/student/viewone/${params.id}`);
                   formik.setValues(fetchStudent.data)
             } catch (error) {
                   console.log(error);
@@ -72,7 +72,7 @@ function EditStudent() {
                     if (willEdit) {
           
                         try {
-                              await axios.put(`http://localhost:4000/student/edit/${params.id}`, values)
+                              await axios.put(`https://student-f583.onrender.com/student/edit/${params.id}`, values)
                               // let index = userContext.students.findIndex((obj) => obj.id == params.id);
                               // userContext.students.splice(index, 1, values)
                               // userContext.setStudents([...userContext.students])

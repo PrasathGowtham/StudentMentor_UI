@@ -7,7 +7,7 @@ import Row_students from './Row_students';
 let userContext;
 async function fetch() {
     try {
-      let datas = await axios.get("http://localhost:4000/student/view")
+      let datas = await axios.get("https://student-f583.onrender.com/student/view")
       userContext.setStudents(datas.data)
       
     } catch (error) {

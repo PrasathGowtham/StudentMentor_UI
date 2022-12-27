@@ -25,7 +25,7 @@ function ViewStudent() {
       <>
 
       <div className='col-md-8' style={{paddingLeft:"20px"}}>
-      <h2 style={{paddingLeft:"250px",fontFamily:"sans-serif"}}>STUDENT MENTOR TABLE</h2>
+      <h2 style={{padding:"22px",fontFamily:"sans-serif"}}><i><strong>STUDENT MENTOR TABLE</strong></i></h2>
    <table class="table">
   <thead>
     <tr>

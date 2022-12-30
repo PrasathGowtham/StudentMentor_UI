@@ -31,7 +31,7 @@ function Sidebar() {
         </Link>
       </li>
       <li>
-        <Link to="/mentors" class="nav-link text-white">
+        <Link to="/mentor" class="nav-link text-white">
           {/* <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg> */}
           Mentors
         </Link>

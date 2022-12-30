@@ -9,7 +9,7 @@ import Students from './components/students/Students.jsx';
 import AddStudent from './components/AddStudent';
 import EditStudent from './components/EditStudent';
 import ViewStudent from './components/ViewStudent';
-
+import Mentor from './components/students/mentor';
 function App() {
   const [mentors, setMentors] = useState([]);
   const [students, setStudents] = useState([]);
@@ -23,6 +23,7 @@ function App() {
             <Route path="/add-student" element={<AddStudent />}/>
             <Route path="/edit-student/:id" element={<EditStudent />}/>
             <Route path="/" element={<ViewStudent />}/>
+              <Route path="/mentor" element={<Mentor />}/>
             {/* <Route path="mentors" element={<Mentors />} /> */}
           </Routes>
         </div>
